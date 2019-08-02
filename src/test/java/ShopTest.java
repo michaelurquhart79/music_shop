@@ -59,4 +59,12 @@ public class ShopTest {
         assertEquals(false, shop.getStock().contains(piano1));
     }
 
+    @Test
+    public void canCalculateTotalPotentialProfit(){
+        shop.addToStock(trumpet1);
+        shop.addToStock(piano1);
+        shop.addToStock(guitar1);
+        assertEquals(1600, shop.totalPotentialProfit());
+    }
+
 }
