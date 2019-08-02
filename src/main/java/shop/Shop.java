@@ -21,7 +21,15 @@ public class Shop {
         return this.name;
     }
 
+    public ArrayList<ISell> getStock() {
+        return stock;
+    }
+
     public void addToStock(ISell newItem) {
         this.stock.add(newItem);
+    }
+
+    public void removeFromStock(ISell item) {
+        this.stock.remove(item);
     }
 }
