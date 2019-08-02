@@ -14,10 +14,14 @@ public class Shop {
     }
 
     public int stockCount(){
-        return stock.size();
+        return this.stock.size();
     }
 
     public String getName() {
-        return name;
+        return this.name;
+    }
+
+    public void addToStock(ISell newItem) {
+        this.stock.add(newItem);
     }
 }

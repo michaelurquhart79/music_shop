@@ -1,4 +1,5 @@
 import accessories.Accessory;
+import behaviours.ISell;
 import instruments.Guitar;
 import instruments.Piano;
 import instruments.Trumpet;
@@ -10,11 +11,11 @@ import static org.junit.Assert.assertEquals;
 
 public class ShopTest {
 
-    Trumpet trumpet1;
-    Piano piano1;
-    Guitar guitar1;
-    Accessory guitarStrings;
-    Accessory sheetmusic;
+    ISell trumpet1;
+    ISell piano1;
+    ISell guitar1;
+    ISell guitarStrings;
+    ISell sheetMusic;
     Shop shop;
 
     @Before
@@ -26,7 +27,7 @@ public class ShopTest {
         guitar1 = new Guitar("String", "red", "wood",
                 "Fender", 250.00, 450.00, 6, "right");
         guitarStrings = new Accessory("Guitar Strings", 2.59, 5.99);
-        sheetmusic = new Accessory("The Vines Highly Evolved Tab Book", 5.50, 10.50);
+        sheetMusic = new Accessory("The Vines Highly Evolved Tab Book", 5.50, 10.50);
         shop = new Shop("Ray's Music Exchange");
     }
 
@@ -40,5 +41,10 @@ public class ShopTest {
         assertEquals(0, shop.stockCount());
     }
 
+    @Test
+    public void canAddStock() {
+        shop.addToStock(trumpet1);
+        assertEquals(1, shop.stockCount());
+    }
 
 }
