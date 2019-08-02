@@ -64,4 +64,8 @@ public class Guitar {
     public String play() {
         return "I am a " + this.description + " and I go Strum Strum.";
     }
+
+    public double calculateMarkup() {
+        return this.salePrice - this.purchasePrice;
+    }
 }
