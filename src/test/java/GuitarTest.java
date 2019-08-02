@@ -59,4 +59,9 @@ public class GuitarTest {
         assertEquals("Guitar", guitar.getDescription());
     }
 
+    @Test
+    public void canPlay() {
+        assertEquals("I am a Guitar and I go Strum Strum.", guitar.play());
+    }
+
 }

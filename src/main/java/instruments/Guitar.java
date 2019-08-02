@@ -60,4 +60,8 @@ public class Guitar {
     public String getDescription() {
         return description;
     }
+
+    public String play() {
+        return "I am a " + this.description + " and I go Strum Strum.";
+    }
 }
