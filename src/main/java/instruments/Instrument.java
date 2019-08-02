@@ -10,7 +10,7 @@ public abstract class Instrument implements IPlay, ISell {
     private String make;
     private double purchasePrice;
     private double salePrice;
-    private String description;
+    protected String description;
 
     public Instrument(String type, String colour, String material, String make, double purchasePrice, double salePrice) {
         this.type = type;

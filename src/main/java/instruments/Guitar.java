@@ -5,7 +5,6 @@ public class Guitar extends Instrument{
 
     private int noOfStrings;
     private String handed;
-    private String description;
 
     public Guitar(String type, String colour, String material, String make, double purchasePrice, double salePrice,
                   int noOfStrings, String handed) {
