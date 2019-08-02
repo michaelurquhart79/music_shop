@@ -6,7 +6,7 @@ public class Guitar extends Instrument{
     private int noOfStrings;
     private String handed;
 
-    public Guitar(String type, String colour, String material, String make, double purchasePrice, double salePrice,
+    public Guitar(InstrumentTypes type, String colour, String material, String make, double purchasePrice, double salePrice,
                   int noOfStrings, String handed) {
         super(type, colour, material, make, purchasePrice, salePrice);
         this.noOfStrings = noOfStrings;

@@ -1,3 +1,4 @@
+import instruments.InstrumentTypes;
 import instruments.Trumpet;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +11,7 @@ public class TrumpetTest {
 
     @Before
     public void before() {
-        trumpet = new Trumpet("Brass", "gold", "Brass", "Bach Stradivarius",
+        trumpet = new Trumpet(InstrumentTypes.BRASS, "gold", "Brass", "Bach Stradivarius",
                 1000.00, 1400.00, 3);
     }
 

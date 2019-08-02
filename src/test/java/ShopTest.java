@@ -1,6 +1,7 @@
 import accessories.Accessory;
 import behaviours.ISell;
 import instruments.Guitar;
+import instruments.InstrumentTypes;
 import instruments.Piano;
 import instruments.Trumpet;
 import org.junit.Before;
@@ -20,11 +21,11 @@ public class ShopTest {
 
     @Before
     public void setup(){
-        trumpet1 = new Trumpet("Brass", "gold", "Brass", "Bach Stradivarius",
+        trumpet1 = new Trumpet(InstrumentTypes.BRASS, "gold", "Brass", "Bach Stradivarius",
                 1000.00, 1400.00, 3);
-        piano1 = new Piano("Keyboard", "black", "wood", "Yamaha", 1500.00,
+        piano1 = new Piano(InstrumentTypes.KEYBOARD, "black", "wood", "Yamaha", 1500.00,
                 2500.00, 94, false);
-        guitar1 = new Guitar("String", "red", "wood",
+        guitar1 = new Guitar(InstrumentTypes.STRING, "red", "wood",
                 "Fender", 250.00, 450.00, 6, "right");
         guitarStrings = new Accessory("Guitar Strings", 2.59, 5.99);
         sheetMusic = new Accessory("The Vines Highly Evolved Tab Book", 5.50, 10.50);
