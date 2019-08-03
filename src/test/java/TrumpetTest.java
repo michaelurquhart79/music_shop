@@ -1,5 +1,6 @@
 import instruments.InstrumentTypes;
 import instruments.Trumpet;
+import instruments.TrumpetTuningType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -12,7 +13,7 @@ public class TrumpetTest {
     @Before
     public void before() {
         trumpet = new Trumpet(InstrumentTypes.BRASS, "gold", "Brass", "Bach Stradivarius",
-                1000.00, 1400.00, 3);
+                1000.00, 1400.00, 3, TrumpetTuningType.B_FLAT);
     }
 
     @Test
@@ -23,6 +24,11 @@ public class TrumpetTest {
     @Test
     public void hasDescription(){
         assertEquals("Trumpet", trumpet.getDescription());
+    }
+
+    @Test
+    public void hasTuning(){
+        assertEquals(TrumpetTuningType.B_FLAT, trumpet.getTuning());
     }
 
     @Test

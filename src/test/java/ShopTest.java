@@ -19,7 +19,7 @@ public class ShopTest {
     @Before
     public void setup(){
         trumpet1 = new Trumpet(InstrumentTypes.BRASS, "gold", "Brass", "Bach Stradivarius",
-                1000.00, 1400.00, 3);
+                1000.00, 1400.00, 3, TrumpetTuningType.B_FLAT);
         piano1 = new Piano(InstrumentTypes.KEYBOARD, "black", "wood", "Yamaha", 1500.00,
                 2500.00, 94, false);
         guitar1 = new Guitar(InstrumentTypes.STRING, "red", "wood",
