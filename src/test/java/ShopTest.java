@@ -1,9 +1,6 @@
 import accessories.Accessory;
 import behaviours.ISell;
-import instruments.Guitar;
-import instruments.InstrumentTypes;
-import instruments.Piano;
-import instruments.Trumpet;
+import instruments.*;
 import org.junit.Before;
 import org.junit.Test;
 import shop.Shop;
@@ -26,7 +23,7 @@ public class ShopTest {
         piano1 = new Piano(InstrumentTypes.KEYBOARD, "black", "wood", "Yamaha", 1500.00,
                 2500.00, 94, false);
         guitar1 = new Guitar(InstrumentTypes.STRING, "red", "wood",
-                "Fender", 250.00, 450.00, 6, "right");
+                "Fender", 250.00, 450.00, 6, HandedType.RIGHT);
         guitarStrings = new Accessory("Guitar Strings", 2.59, 5.99);
         sheetMusic = new Accessory("The Vines Highly Evolved Tab Book", 5.50, 10.50);
         shop = new Shop("Ray's Music Exchange");
