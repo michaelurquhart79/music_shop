@@ -21,6 +21,6 @@ public class Trumpet extends Instrument {
     }
 
     public String play() {
-        return "I am a " + this.description + " and I go toot toot.";
+        return "I am a " + this.getDescription() + " and I go toot toot.";
     }
 }

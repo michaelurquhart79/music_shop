@@ -22,7 +22,7 @@ public class Guitar extends Instrument{
     }
 
     public String play() {
-        return "I am a " + this.description + " and I go Strum Strum.";
+        return "I am a " + this.getDescription() + " and I go Strum Strum.";
     }
 
 }

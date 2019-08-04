@@ -12,7 +12,7 @@ public class Piano extends Instrument{
     }
 
     public String play(){
-        return "I am a " + this.description + " and I go plink plonk.";
+        return "I am a " + this.getDescription() + " and I go plink plonk.";
     }
 
     public int getNumberOfKeys() {
