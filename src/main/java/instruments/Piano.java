@@ -6,10 +6,9 @@ public class Piano extends Instrument{
     private boolean electric;
 
     public Piano(InstrumentTypes type, String colour, String material, String make, double purchasePrice, double salePrice, int numberOfKeys, boolean electric) {
-        super(type, colour, material, make, purchasePrice, salePrice);
+        super(type, colour, material, make, purchasePrice, salePrice, "Piano");
         this.numberOfKeys = numberOfKeys;
         this.electric = electric;
-        this.description = "Piano";
     }
 
     public String play(){

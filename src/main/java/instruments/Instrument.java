@@ -12,13 +12,15 @@ public abstract class Instrument implements IPlay, ISell {
     private double salePrice;
     protected String description;
 
-    public Instrument(InstrumentTypes type, String colour, String material, String make, double purchasePrice, double salePrice) {
+    public Instrument(InstrumentTypes type, String colour, String material, String make, double purchasePrice,
+                      double salePrice, String description) {
         this.type = type;
         this.colour = colour;
         this.material = material;
         this.make = make;
         this.purchasePrice = purchasePrice;
         this.salePrice = salePrice;
+        this.description = description;
     }
 
     public InstrumentTypes getType() {

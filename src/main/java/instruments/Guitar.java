@@ -8,10 +8,9 @@ public class Guitar extends Instrument{
 
     public Guitar(InstrumentTypes type, String colour, String material, String make, double purchasePrice, double salePrice,
                   int noOfStrings, HandedType handed) {
-        super(type, colour, material, make, purchasePrice, salePrice);
+        super(type, colour, material, make, purchasePrice, salePrice,"Guitar");
         this.noOfStrings = noOfStrings;
         this.handed = handed;
-        this.description = "Guitar";
     }
 
     public int getNoOfStrings() {
@@ -20,10 +19,6 @@ public class Guitar extends Instrument{
 
     public HandedType getHanded() {
         return handed;
-    }
-
-    public String getDescription() {
-        return description;
     }
 
     public String play() {
